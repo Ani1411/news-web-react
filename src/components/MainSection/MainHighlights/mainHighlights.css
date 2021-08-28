@@ -1,0 +1,47 @@
+.main-highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "one one two two three four" "five six two two three seven" "eight six nine ten ten seven";
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.nine {
+    grid-area: nine;
+}

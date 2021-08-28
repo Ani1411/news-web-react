@@ -1,0 +1,34 @@
+.news-img-box{
+
+}
+
+.news-img-box-link{
+
+}
+
+.title-box{
+    position: relative;
+    width: 100%;
+}
+.title-box img{
+    object-fit: cover;
+}
+
+.title-box .txt-over-img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    color: #ffffff;
+}
+
+.black-box{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+    z-index: 1;
+}
