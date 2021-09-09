@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
-import MainHighlights from '../components/MainSection/MainHighlights/MainHighlights'
+import CategoriseSection from '../components/CategorySection'
+import Headlines from '../components/Headlines'
+import MainHighlights from '../components/MainSection/Highlights/Highlights'
 import Navbar from '../components/Navbar/Navbar'
+import RecentNews from '../components/RecentNews'
 import './../css/home.css'
 import { sample } from './../sample'
 
@@ -13,6 +16,14 @@ export default class Home extends Component {
                     <section>
                         <MainHighlights sample={sample.slice(0, 10)} />
                     </section>
+
+                </div>
+                <div className="rc-hl-container">
+                    <RecentNews data={sample.slice(0, 5)} />
+                    <Headlines data={sample.slice(0, 10)} />
+                </div>
+                <div className="categorise-news-section">
+                    <CategoriseSection/>
                 </div>
             </div>
         )

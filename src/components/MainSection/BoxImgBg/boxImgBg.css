@@ -12,6 +12,8 @@
     overflow: hidden;
 }
 .title-box img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     transition: all 0.6s ease-in-out;
 }
@@ -36,5 +38,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.452);
     z-index: 1;
+}
+
+.title-box .txt-over-img{
+    padding: 5px 10px;
+}
+.title-box .txt-over-img h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.title-box .txt-over-img span{
+    font-size: 12px;
 }
 

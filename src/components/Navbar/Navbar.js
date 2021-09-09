@@ -7,11 +7,12 @@ const Navbar = () => {
         <h1>NEWSAPP</h1>
         <ul className="menu-list">
             <li>Home</li>
-            <li>Science</li>
-            <li>Technology</li>
-            <li>Health</li>
-            <li>Politics</li>
-            <li>Art & Culture</li>
+            <li>business</li>
+            <li>science</li>
+            <li>technology</li>
+            <li>sports</li>
+            <li>health</li>
+            <li>entertainment</li>
             <li><i className="fas fa-search" /></li>
         </ul>
     </nav>

@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import BoxImgBg from '../BoxImgBg/BoxImgBg'
-import './mainHighlights.css'
+import './highlights.css'
 
-const MainHighlights = ({ sample }) => {
+const Highlights = ({ sample }) => {
     let highlights_class = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven']
     return (
         <div className="main-highlights">
@@ -16,4 +16,4 @@ const MainHighlights = ({ sample }) => {
         </div>
     )
 }
-export default MainHighlights
+export default Highlights
