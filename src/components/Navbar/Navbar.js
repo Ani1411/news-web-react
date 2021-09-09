@@ -8,9 +8,8 @@ const Navbar = () => {
         <ul className="menu-list">
             <li>Home</li>
             <li>Science</li>
-            <li>Tech</li>
+            <li>Technology</li>
             <li>Health</li>
-            <li>Fashion</li>
             <li>Politics</li>
             <li>Art & Culture</li>
             <li><i className="fas fa-search" /></li>
