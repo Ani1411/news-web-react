@@ -13,12 +13,9 @@
 }
 
 .footer .footer-about hr {
-    color: #ff0000;
     width: 10%;
     height: 5px;
-    background-color: #ff0000;
-    outline: none;
-    border: none;
+    background-color: var(--main-default-color);
 }
 
 .footer .footer-about p, .footer .footer-cat ul {
