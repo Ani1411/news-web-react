@@ -4,6 +4,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    margin: 0 0 5px 0 ;
 }
 
 .cat-ns-head h1 {
