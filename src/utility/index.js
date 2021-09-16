@@ -1,0 +1,1 @@
+export const categories = ['business', 'science', 'technology', 'sports', 'health', 'entertainment']
