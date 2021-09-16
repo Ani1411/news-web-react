@@ -3,10 +3,10 @@ import HeadlineBox from './headlinebox/HeadlineBox'
 
 
 const Headlines = ({ data }) => {
-    return <div >
+    return <div style={{ padding: '10px' }} >
         <h1>Top Headlines</h1>
-        <hr></hr>
-        <div style={{ padding: '10px 10px'}}>
+        <hr />
+        <div style={{ padding: '5px 5px' }}>
             {
                 data.map(item => {
                     return <HeadlineBox data={item} />
