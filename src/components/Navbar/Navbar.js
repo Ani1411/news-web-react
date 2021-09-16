@@ -14,11 +14,13 @@ const Navbar = () => {
         <ul className="menu-list">
             <li><Link className="nav-link" to="/">Home</Link></li>
             {
-                categories.map(item=>{
-                    return <li><NavLink className="nav-link" activeClassName="active" to={"/"+item}>{item}</NavLink></li>
+                categories.map(item => {
+                    return <li>
+                        <NavLink className="nav-link" activeClassName="active" to={"/" + item}>{item}</NavLink>
+                    </li>
                 })
             }
-            <li><i className="fas fa-search" /></li>
+            {/* <li><i className="fas fa-search" /></li> */}
         </ul>
     </nav>
 }

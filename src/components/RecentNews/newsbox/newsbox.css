@@ -7,6 +7,10 @@
     padding: 10px;
 }
 
+.newsbox:hover .news-title h3{
+    color:var(--main-default-color)
+}
+
 .newsbox-img {
     flex-basis: 2;
     width: 180px;
@@ -38,9 +42,6 @@
 }
 .news-title h3{
     letter-spacing: 1px;
-}
-.news-title h3:hover{
-    color:var(--main-default-color)
 }
 
 .news-desc {}

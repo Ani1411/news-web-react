@@ -1,5 +1,7 @@
 import React from 'react'
+import { toDate } from '../../../utility'
 import './boxImgBg.css'
+
 
 const BoxImgBg = ({ data, height }) => {
     return <div className="news-img-box">
@@ -9,7 +11,7 @@ const BoxImgBg = ({ data, height }) => {
                 <div className="black-box"></div>
                 <div className="txt-over-img">
                     <h3>{data.title}</h3>
-                    <span>{Date(data.publishedAt).slice(4, 15)}</span>
+                    <span>{toDate(data.publishedAt)}</span>
                 </div>
             </div>
         </a>

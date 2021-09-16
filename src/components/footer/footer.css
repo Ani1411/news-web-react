@@ -34,3 +34,7 @@
     color: #bbbaba;
     margin: 1% 0;
 }
+
+.footer .footer-cat ul li:hover{
+    color:var(--main-default-color)
+}

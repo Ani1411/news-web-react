@@ -1,4 +1,5 @@
 import React from 'react'
+import { toDate } from '../../../utility';
 import './newsbox.css'
 
 const NewsBox = ({ data }) => {
@@ -12,7 +13,7 @@ const NewsBox = ({ data }) => {
                 {
                     data.author && <span>by <strong>{data.author} </strong></span>
                 }
-                <span>{data.publishedAt}</span>
+                <span>{toDate(data.publishedAt)}</span>
             </div>
             <p className="news-desc">{data.description}</p>
         </div>

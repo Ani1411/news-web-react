@@ -8,16 +8,16 @@ import Topic from './pages/Topic'
 
 const App = () => {
     return <div >
-        <div style={{ margin: '0 5%' }}>
-            <BrowserRouter>
+        <BrowserRouter>
             <Navbar />
-                <Switch>
+            <Switch>
+                <div style={{ margin: '0 5%' }}>
                     <Route exact path="/" component={Home} />
                     <Route path="/:category" component={Topic} />
-                </Switch>
-            </BrowserRouter>
-            {/* <Home /> */}
-        </div>
+                </div>
+            </Switch>
+        </BrowserRouter>
+        {/* <Home /> */}
         <Footer />
     </div>
 }
