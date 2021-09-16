@@ -1,18 +1,23 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import './nav.css'
-
+import { categories } from '../../utility';
 
 const Navbar = () => {
     return <nav>
-        <h1>NEWSAPP</h1>
+        <NavLink to="/">
+            <h1 className="logo">
+                <span>WEB</span>
+                <span>NEWS</span>
+            </h1>
+        </NavLink>
         <ul className="menu-list">
-            <li>Home</li>
-            <li>business</li>
-            <li>science</li>
-            <li>technology</li>
-            <li>sports</li>
-            <li>health</li>
-            <li>entertainment</li>
+            <li><Link className="nav-link" to="/">Home</Link></li>
+            {
+                categories.map(item=>{
+                    return <li><NavLink className="nav-link" activeClassName="active" to={"/"+item}>{item}</NavLink></li>
+                })
+            }
             <li><i className="fas fa-search" /></li>
         </ul>
     </nav>
