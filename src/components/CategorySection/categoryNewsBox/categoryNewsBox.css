@@ -9,6 +9,7 @@
 
 .cat-ns-head h1 {
     text-transform: capitalize;
+    color: var(--main-default-color);
 }
 
 .cat-ns-head span {}
