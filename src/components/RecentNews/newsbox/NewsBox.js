@@ -10,10 +10,17 @@ const NewsBox = ({ data }) => {
         <div className="news-content">
             <div className="news-title">
                 <h3>{data.title}</h3>
+                <span className="publish-date">{toDate(data.publishedAt)}</span>
                 {
-                    data.author && <span>by <strong>{data.author} </strong></span>
+                    data.author && <span >
+                        by <strong>
+                            <span className="author">
+                                {data.author}
+                            </span>
+                        </strong>
+
+                    </span>
                 }
-                <span>{toDate(data.publishedAt)}</span>
             </div>
             <p className="news-desc">{data.description}</p>
         </div>

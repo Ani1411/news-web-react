@@ -43,7 +43,14 @@
 .news-title h3{
     letter-spacing: 1px;
 }
-
-.news-desc {}
+.news-title .author, .news-title .publish-date{
+    font-size: 0.85rem;
+}
+.news-title .publish-date{
+    color: #abaaba;
+}
+.news-desc {
+    font-size: 0.8rem;
+}
 
 .news-keywords {}
