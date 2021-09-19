@@ -8,7 +8,7 @@ const Highlights = ({ sample }) => {
         <div className="main-highlights">
             {
                 sample.map((item, i) => {
-                    return <div className={highlights_class[i] + ' highlight'}>
+                    return <div key={item.title} className={highlights_class[i] + ' highlight'}>
                         <BoxImgBg data={item} height={i === 1 || i === 2 || i === 5 || i === 6 ? '400px' : '200px'} />
                     </div>
                 })

@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px 10px;
+    gap: 15px 15px;
     grid-template-areas: "one one two two three four" "five six two two three seven" "eight six nine ten ten seven";
 }
 
