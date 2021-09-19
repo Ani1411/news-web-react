@@ -7,18 +7,15 @@ import Topic from './pages/Topic'
 
 
 const App = () => {
-    return <div >
+    return <>
         <BrowserRouter>
             <Navbar />
             <Switch>
-                <div style={{ margin: '0 5%' }}>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/:category" component={Topic} />
-                </div>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/:category/" component={Topic} />
             </Switch>
         </BrowserRouter>
-        {/* <Home /> */}
-        <Footer />
-    </div>
+            <Footer />
+    </>
 }
 export default App

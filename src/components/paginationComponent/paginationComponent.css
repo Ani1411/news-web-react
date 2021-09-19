@@ -1,0 +1,46 @@
+.pagination {}
+
+.pagination ul {
+    text-align: center;
+    padding: 10px;
+}
+
+.pagination ul li {
+    display: inline;
+    padding: 5px 7px;
+    background-color: #fff;
+    margin: 0 1%;
+    cursor: pointer;
+}
+
+.pagination ul .pagination-li {
+    border-radius: 5px;
+    font-size: 1.1rem;
+    /* border: 1px solid #aba; */
+}
+
+.pagination ul .pagination-li:hover {
+    color: var(--main-default-color);
+}
+
+.pagination ul li.active-page {
+    background-color: var(--main-default-color);
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.pagination ul li button {
+    font-size: 1.1rem;
+    padding: 5px;
+    cursor: pointer;
+    background-color: unset;
+}
+
+.pagination ul li button:hover {
+    color: var(--main-default-color)
+}
+
+.pagination ul li button:disabled {
+    color: #ababab;
+    cursor: not-allowed;
+}

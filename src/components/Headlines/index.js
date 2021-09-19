@@ -9,7 +9,7 @@ const Headlines = ({ data }) => {
         <div style={{ padding: '5px 5px' }}>
             {
                 data.map(item => {
-                    return <HeadlineBox data={item} />
+                    return <HeadlineBox data={item} key={item.title} />
                 })
             }
         </div>

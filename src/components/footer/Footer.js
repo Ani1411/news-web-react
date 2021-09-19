@@ -16,7 +16,7 @@ const Footer = () => {
             <ul>
             {
                 categories.map(item=>{
-                    return <li><a href={"/"+item}>{item}</a></li>
+                    return <li key={item}><a href={"/"+item}>{item}</a></li>
                 })
             }
             </ul>

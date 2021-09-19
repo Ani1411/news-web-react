@@ -9,7 +9,7 @@ const RecentNews = ({ data }) => {
         <div style={{ padding: '5px' }}>
             {
                 data.map(item => {
-                    return <NewsBox data={item} />
+                    return <NewsBox data={item} key={item.title} />
                 })
             }
         </div>
