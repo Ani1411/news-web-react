@@ -20,15 +20,15 @@ export default class CategoriseSection extends Component {
     //https://newsdata.io/api/1/news?language=en&category=technology
 
     componentDidMount() {
-        // categories.forEach(cat => {
-        //     axios.get(cors_uri + 'https://newsdata.io/api/1/news?apiKey=pub_116372cfc513aa03e2c5a75098d27b49d736&country=in&language=en&category=' + cat)
-        //         .then(res => {
-        //             console.log(res)
-        //             // this.setState({ categoriseNews: { ...this.state.categoriseNews, [cat]: JSON.parse(res.data.contents).results } })
-        //             this.setState({ categoriseNews: { ...this.state.categoriseNews, [cat]: res.data.results } })
-        //         })
-        //         .catch(err => console.log(err.response))
-        // })
+        categories.forEach(cat => {
+            axios.get(cors_uri + 'https://newsdata.io/api/1/news?apiKey=pub_116372cfc513aa03e2c5a75098d27b49d736&country=in&language=en&category=' + cat)
+                .then(res => {
+                    console.log(res)
+                    // this.setState({ categoriseNews: { ...this.state.categoriseNews, [cat]: JSON.parse(res.data.contents).results } })
+                    this.setState({ categoriseNews: { ...this.state.categoriseNews, [cat]: res.data.results } })
+                })
+                .catch(err => console.log(err.response))
+        })
     }
     render() {
         console.log(this.state.categoriseNews)
@@ -46,7 +46,7 @@ export default class CategoriseSection extends Component {
                             <hr />
                             <div className="cat-ns-list">
                                 {
-                                    arr.slice(0, 5).map(item => <CategoryNewsBox data={item} />)
+                                    arr.slice(0, 5).map(item => <CategoryNewsBox data={item} key={item.title} />)
                                 }
 
                             </div>
