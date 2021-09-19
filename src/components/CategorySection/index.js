@@ -5,9 +5,9 @@ import './categoryNewsBox/categoryNewsBox.css'
 import { categories } from './../../utility/'
 import { NavLink } from 'react-router-dom'
 
-const cors_uri2 = 'https://api.allorigins.win/get?url='
+// const cors_uri2 = 'https://api.allorigins.win/get?url='
 const cors_uri = 'https://cors-anywhere.herokuapp.com/'
-const key = 'pub_116372cfc513aa03e2c5a75098d27b49d736'
+// const key = 'pub_116372cfc513aa03e2c5a75098d27b49d736'
 
 
 export default class CategoriseSection extends Component {

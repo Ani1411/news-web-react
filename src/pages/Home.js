@@ -42,4 +42,4 @@ export default class Home extends Component {
 
     }
 }
-const IPGeo = 'https://ipapi.co/json/'
+// const IPGeo = 'https://ipapi.co/json/'

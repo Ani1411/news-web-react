@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { Component } from 'react'
-import Navbar from '../components/Navbar/Navbar';
 import PaginationComponent from '../components/paginationComponent/PaginationComponent'
 
 export default class Topic extends Component {
