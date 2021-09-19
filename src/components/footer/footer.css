@@ -1,10 +1,13 @@
 .footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 5%;
+    /* position: absolute; */
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #ffffff;
+    padding: 5%;
+    width: 100%;
+    background-color: #000000;
 }
 
 .footer .footer-about {
@@ -26,15 +29,14 @@
     flex-grow: 1;
     text-transform: uppercase;
 }
-.footer .footer-cat h3{
-    
-}
 
-.footer .footer-cat ul li{
+.footer .footer-cat h3 {}
+
+.footer .footer-cat ul li {
     color: #bbbaba;
     margin: 1% 0;
 }
 
-.footer .footer-cat ul li:hover{
-    color:var(--main-default-color)
+.footer .footer-cat ul li:hover {
+    color: var(--main-default-color)
 }
