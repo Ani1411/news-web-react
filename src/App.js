@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Footer from './components/footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
-import Topic from './pages/Topic'
+import Category from './pages/Category'
 
 
 const App = () => {
@@ -12,10 +12,10 @@ const App = () => {
             <Navbar />
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route exact path="/:category/" component={Topic} />
+                <Route exact path="/:category/" component={Category} />
             </Switch>
-        </BrowserRouter>
             <Footer />
+        </BrowserRouter>
     </>
 }
 export default App

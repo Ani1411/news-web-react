@@ -7,18 +7,18 @@ const Footer = () => {
         <div className="footer-about">
             <h1>WEBNEWS</h1>
             <hr />
-            <p >
+            <p>
                 WEBNEWS is a personal project developed by Aniruddh using APIs from newsapi.org and newsdata.io.
             </p>
         </div>
         <div className="footer-cat">
             <h3>Categories</h3>
             <ul>
-            {
-                categories.map(item=>{
-                    return <li key={item}><a href={"/"+item}>{item}</a></li>
-                })
-            }
+                {
+                    categories.map(item => {
+                        return <li key={item}><a href={"/" + item}>{item}</a></li>
+                    })
+                }
             </ul>
         </div>
     </div>

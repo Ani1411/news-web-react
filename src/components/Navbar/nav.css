@@ -61,3 +61,61 @@ nav ul li .nav-link:hover {
 nav ul li .active {
     color: var(--main-default-color);
 }
+
+nav .nav-icons {
+    display: none;
+}
+
+@media only screen and (max-device-width: 768px) and (orientation: portrait) {
+    nav {
+        position: relative;
+        display: flex;
+        overflow: unset;
+        line-height: unset;
+    }
+    nav .menu-list {
+        display: none;
+    }
+    nav .nav-icons {
+        display: block;
+    }
+    nav .sidebar {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        z-index: 100;
+        min-height: 100vh;
+        background-color: black;
+        padding: 40px 0 0 0;
+        transition: width 1s ease-in-out;
+    }
+    nav .sidebar li {
+        display: block;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    nav .sidebar li .nav-link {
+        padding: unset;
+        margin: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        transition: all .25s ease-in-out;
+        font-weight: 600;
+        color: var(--dark-text-color);
+        position: relative;
+        letter-spacing: 0.5px;
+    }
+    nav .sidebar li .nav-link::after {
+        display: none;
+    }
+    nav .nav-icons .fa-times {
+        position: absolute;
+        right: 0;
+        z-index: 110;
+        color: red;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
