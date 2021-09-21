@@ -9,7 +9,6 @@ export default class PaginationComponent extends Component {
         this.state = {
             multiplier: 0,
         }
-
     }
 
     handlePageNumberClick = (index) => {
@@ -27,11 +26,6 @@ export default class PaginationComponent extends Component {
         let multiplier = this.state.multiplier
         let slice_fr = multiplier === 0 || multiplier === 1 ? 0 : multiplier - 2
         let slice_to = multiplier === 0 || multiplier === 1 ? 5 : multiplier + 3
-
-        console.log(' ')
-        console.log('from', slice_fr)
-        console.log('to', slice_to)
-        console.log('multiplier', multiplier)
         return (
             <div>
                 <RecentNews data={data} />

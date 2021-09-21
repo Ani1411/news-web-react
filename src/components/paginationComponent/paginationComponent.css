@@ -1,5 +1,3 @@
-.pagination {}
-
 .pagination ul {
     text-align: center;
     padding: 10px;
@@ -16,7 +14,6 @@
 .pagination ul .pagination-li {
     border-radius: 5px;
     font-size: 1.1rem;
-    /* border: 1px solid #aba; */
 }
 
 .pagination ul .pagination-li:hover {

@@ -8,9 +8,9 @@ const NewsBox = ({ data }) => {
         <div className="newsbox-img">
             {
                 data.urlToImage ?
-                <img src={data.urlToImage} alt={data.title} />
-                :
-            <img src={loadIcon} alt={data.title} />
+                    <img src={data.urlToImage} alt={data.title} />
+                    :
+                    <img src={loadIcon} alt={data.title} />
             }
         </div>
         <div className="news-content">
