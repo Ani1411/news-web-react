@@ -25,19 +25,23 @@ export default class Home extends Component {
         // this.setState({ news: response })
     }
     render() {
-        console.log(this.state.news)
         var main_highlights = this.state.news.slice(0, 10)
         var recent_news = this.state.news.slice(10, 20)
         var headlines = this.state.news.slice(20)
-        return this.state.news && <div className="main-container">
-            <MainHighlights sample={main_highlights} />
-            <div className="rc-hl-container">
-                <RecentNews data={recent_news} />
-                <Headlines data={headlines} />
-            </div>
-            <div className="categorise-news-section">
-                <CategoriseSection />
-            </div>
+        return <div className="main-container">
+            {/* {
+                this.state.news && <> */}
+                    {/* <MainHighlights sample={main_highlights} />
+                    <div className="rc-hl-container">
+                        <RecentNews data={recent_news} />
+                        <Headlines data={headlines} />
+                    </div> */}
+                    <div className="categorise-news-section">
+                        <CategoriseSection />
+                    </div>
+                {/* </>
+            } */}
+
         </div>
 
     }
