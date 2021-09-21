@@ -21,7 +21,7 @@ export default class CategoriseSection extends Component {
 
     componentDidMount() {
         categories.forEach(cat => {
-            axios.get(cors_uri + 'https://newsdata.io/api/1/news?apiKey=pub_116372cfc513aa03e2c5a75098d27b49d736&country=in&language=en&category=' + cat)
+            axios.get('https://newsdata.io/api/1/news?apiKey=pub_116372cfc513aa03e2c5a75098d27b49d736&country=in&language=en&category=' + cat)
                 .then(res => {
                     console.log(res)
                     // this.setState({ categoriseNews: { ...this.state.categoriseNews, [cat]: JSON.parse(res.data.contents).results } })
